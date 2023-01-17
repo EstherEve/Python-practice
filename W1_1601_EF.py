@@ -11,6 +11,10 @@ firstNumber = 21
 secondNumber = 18
 if firstNumber > secondNumber: print ("Have some wine!") # means that the sum above is true
 
+choice = True
+oChoice = False
+print(type(choice)) # => <class 'bool'>
+
 # VARIABLES
 # need to be labelled appropriatly, no spaces, case sensitive, no numbers
 ''' three types
@@ -35,12 +39,90 @@ if firstnumber > secondnumber: print ("Have some wine!")
 else: print ("No wine for you")
 
 # simple math
+
+print (7 * 10) # => math within the terminal instantly
+
 x = 3
 y = 6
-print (x + y)
+print (x + y) # => math using values assigned to 
 
 a = 5
 b = 10 
 c = a + b # new variable created and the below will print it
 print(c)
+
+fNumber = input()
+sNumber = input()
+
+# STRING TO NUMBER
+
+numb1 = input("Enter first: ")
+numb2 = input("Enter second: ")
+sum = int(numb1) + int(numb2)
+print(sum)
+
+# STRING TO FLOAT
+
+numb1 = input("First number: ")
+numb2 = input("Second number: ")
+sum = float(numb1) / float(numb2)
+print(sum)
+
+#checking data types
+
+fName = "Esther"
+age = 28
+PI = 3.14
+print(type(fName)) # <class 'str'>
+print(type(age)) # <class 'int'>
+print(type(PI)) # <class 'float'>
+
+# Other Data Type
+# Lists, Tuples, Dictionaries
+
+# Lists [SquareBrackets]
+# Zero Indexing | Zero-Based Numbering:
+#		  0		1	2	 3		4
+myList = [150, 341, 458, 3945, 298]
+print(myList)
+print(myList[2])
+print(myList[2] + myList[4])
+
+fifthItem = myList[4]
+print(fifthItem)
+
+myList.insert(2, 700)
+myList.append("Ive got you in my sights")
+myList.remove(150)
+myList.pop(5)
+
+print(myList)
+
+
+# Tuples (RoundBrackets)
+myTuple = (250, 294, 49, 5491, 519) # Immutable: Cant change the values after definition
+print(myTuple)
+
+print(myTuple[4])
+
+# Dictionaries {Curly Brackets}
+# Key:Value Pair
+
+# ACCESSING ITEMS WITHIN DICTIONARY 
+
+thisIsMe = {
+    "firstName" : "Esther",
+    "lastName" : "Francique",
+    "location" : "London",
+    "bio" : "Software Developer"
+}
+
+print(thisIsMe["bio"]) # => Software Developer
+
+# Tips 
+''' 
+- ensure that the text have quotes arount them
+- remember the commas after each section
+- square brackets only, with the name of the title section in ""
+'''
 
